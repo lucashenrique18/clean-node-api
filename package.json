@@ -4,9 +4,10 @@
   "description": "Construindo uma API Rest com NodeJS utilizando TDD, Clean Architecture e Design Patterns.",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll --silent --colors",
-    "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace",
-    "test:ci": "jest --coverage --noStackTrace --silent"
+    "test": "jest --silent --colors --passWithNoTests",
+    "test:unit": "npm test -- --watch",
+    "test:staged": "npm test --findRelatedTests --noStackTrace",
+    "test:ci": "npm test --coverage --noStackTrace"
   },
   "standard": {
     "env": ["jest"]
