@@ -1,11 +1,11 @@
 {
   "name": "clean-node-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Construindo uma API Rest com NodeJS utilizando TDD, Clean Architecture e Design Patterns.",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll",
-    "test:staged": "jest --passWithNoTests"
+    "test": "jest --watchAll --silent --colors",
+    "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace"
   },
   "standard": {
     "env": ["jest"]
